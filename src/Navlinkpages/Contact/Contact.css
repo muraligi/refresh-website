@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contact-header{
+    background-color: rgb(243, 242, 242);
+    width: 100%;
+}
+
+#contact-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+.contact-text{
+    background-color: white;
+    color: rgba(3, 3, 88, 0.959);
+    height: 300px;
+    width: 565px;
+    position: absolute;
+    margin-top: -375px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 40px;
+}
+.contact-text h1{
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+.contact-text p{
+    color: rgba(15, 15, 124, 0.753);
+    line-height: 1.8rem;
+}
+
+.contact-form {
+    padding: 60px 295px;
+}
+
+.input-toprow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-path {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.input1 , .input2 {
+    background-color: rgb(243, 242, 242);
+    color: rgba(15, 15, 124, 0.753);
+    width: 370px;
+    height: 48px;
+    border-radius: 25px;
+    outline-color: rgba(3, 3, 88, 0.959);
+    border: 1px solid rgba(15, 15, 124, 0.753);
+    font-size: 16px;
+    padding: 10px 0px 0px 20px;
+}
+
+.input1:hover , 
+.input2:hover , 
+.input3:hover ,
+textarea:hover {
+    outline: 1px solid rgba(15, 15, 124, 0.555);
+}
+
+.input3 {
+    background-color: rgb(243, 242, 242);
+    color: rgba(15, 15, 124, 0.753);
+    width: 760px;
+    height: 48px;
+    font-size: 16px;
+    padding: 10px 0px 0px 20px;
+    border-radius: 25px;
+    outline-color: rgba(3, 3, 88, 0.959);
+    border: 1px solid rgba(15, 15, 124, 0.753);
+}
+
+textarea {
+    background-color: rgb(243, 242, 242);
+    color: rgba(15, 15, 124, 0.753);
+    width: 760px;
+    height: 105px;
+    padding: 18px 0px 0px 20px;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    outline-color: rgba(3, 3, 88, 0.959);
+    border: 1px solid rgba(15, 15, 124, 0.753);   
+}
+
+.input-path label{
+    font-size: 17px;
+    color: rgba(15, 15, 124, 0.753);
+    padding-left: 20px;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.input1:focus+label ,
+.input2:focus+label ,
+.input3:focus+label ,
+textarea:focus+label ,
+.input1:valid+label ,
+.input2:valid+label ,
+.input3:valid+label ,
+textarea:valid+label {
+    background-color: transparent;
+    color: rgba(15, 15, 124, 0.753);
+    font-size: 12px;
+    top: 4px;
+    left: 10px;
+    padding: 0px 10px;
+}
+
+.con-btn {
+    background-color: royalblue;
+    color: white;
+    width: 130px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: none;
+}
+
+.con-btn:hover{
+    transform: scale(1.02);
+}
+

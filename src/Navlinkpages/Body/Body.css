@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-bot h1{
+    width: 600px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 46px;
+    color: rgb(2, 2, 85);
+    padding-bottom: 20px;
+}

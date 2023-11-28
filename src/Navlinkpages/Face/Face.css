@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.face-card{
+    padding-bottom: 60px !important;
+}
+
+.white-space-facebot {
+    background-color: white;
+    width: 67%;
+    height: 410px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 60px 0px 0px 70px;
+}
+
+#face-img{
+    width: 31%;
+    height: 410px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 0px 0px 20px;   
+}
+
+.white-space-facebot h1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 46px;
+    color: rgb(2, 2, 85);
+    padding-bottom: 20px;
+}
+
+.white-space-facebot p{
+    width: 700px;
+    color: rgba(2, 2, 102, 0.568);
+    font-size: 17px;
+    padding-bottom: 18px;
+    line-height: 1.9rem;
+}
+.white-space-facebot button {
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgba(1, 1, 63, 0.959);
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
