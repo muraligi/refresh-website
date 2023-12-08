@@ -1,13 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.body-bot h1{
+
+.body-bot h1 {
     width: 600px;
     font-family: sans-serif;
     font-weight: bolder;
     font-size: 46px;
     color: rgb(2, 2, 85);
     padding-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+
+    .body-bot h1 {
+        width: auto;
+        font-size: 32px;
+        padding: 0;
+    }
+    
 }

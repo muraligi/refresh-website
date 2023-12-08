@@ -1,39 +1,50 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.hair-header{
+
+/* css hair desktop design start -----------------------------------------------*/
+
+.hair-header {
     width: 100%;
-}
-#top-img{
-    width: 100%;
-    height: 460px;
-    object-fit: cover;
-    object-position: center;
-}
-.content-text{
-    background-color: white;
-    color: rgba(3, 3, 88, 0.959);
-    height: 250px;
-    width: 565px;
-    position: absolute;
-    margin-top: -355px;
-    margin-left: 100px;
-    border-radius: 20px;
-    padding: 40px;
-}
-.content-text h1{
-    font-family: sans-serif;
-    font-size: 60px;
-    font-weight: bolder;
-}
-.content-text p{
-    color: rgba(15, 15, 124, 0.753);
-    line-height: 1.8rem;
 }
 
-.Main-filter{
+@media (min-width: 992px) {
+
+    .top-img {
+        width: 100%;
+        height: 460px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .content-text {
+        background-color: white;
+        color: rgba(3, 3, 88, 0.959);
+        height: 250px;
+        width: 565px;
+        position: absolute;
+        margin-top: -355px;
+        margin-left: 100px;
+        border-radius: 20px;
+        padding: 40px;
+    }
+
+    .content-text h1 {
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    .content-text p {
+        color: rgba(15, 15, 124, 0.753);
+        line-height: 1.8rem;
+    }
+
+}
+
+.Main-filter {
     background-color: rgb(243, 242, 242);
     display: flex;
     flex-direction: row;
@@ -43,13 +54,13 @@
     padding: 55px 105px 30px 95px;
 }
 
-.leftside{
+.leftside {
     color: gray;
     display: flex;
     flex-direction: row;
 }
 
-.filter{
+.filter {
     background-color: rgb(243, 242, 242);
     margin-top: 20px !important;
     margin-left: 13px !important;
@@ -57,52 +68,52 @@
     font-size: 15px;
 }
 
-.filter-li{
+.filter-li {
     color: gray;
     list-style: none;
 }
 
-.nav-toggle{
+.nav-toggle {
     padding-left: 20px;
     color: gray;
     text-decoration: none;
 }
 
-.nav-toggle:hover{
+.nav-toggle:hover {
     color: rgb(66, 65, 65);
     text-decoration: underline;
 }
 
-.check-box{
+.check-box {
     padding-bottom: 13px;
 }
 
-.box{
+.box {
     background-color: rgb(243, 242, 242);
     border-color: gray;
     box-shadow: none !important;
 }
 
-.filter-area{
+.filter-area {
     width: 350px;
     height: 130px;
 }
 
-#select-row a{
+#select-row a {
     text-decoration: 2px solid underline;
     cursor: pointer;
 }
 
-#select-row a:hover{
+#select-row a:hover {
     text-decoration: 2px solid black underline;
 }
 
-.checkbox-row{
+.checkbox-row {
     color: gray;
     padding: 10px 15px 0px 20px;
 }
 
-#select-row{
+#select-row {
     color: gray;
     display: flex;
     flex-direction: row;
@@ -111,16 +122,16 @@
     border-bottom: 1px solid gray;
 }
 
-.prize-row{
+.prize-row {
     padding-left: 5px;
 }
 
-.prize-area{
+.prize-area {
     width: 370px;
     height: 130px;
 }
 
-.input-row{
+.input-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -150,11 +161,11 @@
     font-size: 15px;
 }
 
-.prizeip:hover{
+.prizeip:hover {
     border: 2px solid rgba(15, 15, 124, 0.753);
 }
 
-.input-area label{
+.input-area label {
     font-size: 15px;
     color: gray;
     padding-left: 35px;
@@ -165,7 +176,7 @@
     transition: 0.3s ease all;
 }
 
-.prizeip:focus+label ,
+.prizeip:focus+label,
 .prizeip:valid+label {
     background-color: transparent;
     color: gray;
@@ -175,38 +186,39 @@
     padding: 0px 10px;
 }
 
-.rightside{
+.rightside {
     color: gray;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.option-area{
+.option-area {
     padding: 0px 20px 0px 10px;
 }
 
-.select{
+.select {
     width: 200px;
     color: gray;
     background-color: rgb(243, 242, 242);
     padding: 10px;
     border: none;
+    cursor: pointer;
 }
 
-.select option{
+.select option {
     background-color: white;
 }
 
-.cards-rows{
+.cards-rows {
     padding-top: 0;
 }
 
-#secondcard-row{
+#secondcard-row {
     padding: 30px 0px 60px 0px;
 }
 
-#cards1{
+#cards1 {
     background-color: rgb(243, 242, 242);
     border: 1px solid black;
     height: 480px;
@@ -216,6 +228,7 @@
     border-radius: 15px;
     cursor: pointer;
 }
+
 .hover-img {
     overflow: hidden;
     position: relative;
@@ -266,7 +279,7 @@
     padding-top: 20px;
 }
 
-#cards1 p{
+#cards1 p {
     font-family: sans-serif;
     font-size: 16px;
     color: rgb(63, 63, 141);
@@ -342,7 +355,7 @@
     line-height: 1.9rem;
 }
 
-.white-space-gift button ,
+.white-space-gift button,
 .white-space-conhair button {
     width: 140px;
     height: 50px;
@@ -362,15 +375,15 @@
     padding: 60px 60px 0px 70px;
 }
 
-#conhair-img{
+#conhair-img {
     width: 31%;
     height: 430px;
     object-fit: cover;
     object-position: center;
-    border-radius: 20px 0px 0px 20px;   
+    border-radius: 20px 0px 0px 20px;
 }
 
-.white-space-conhair h1{
+.white-space-conhair h1 {
     width: 600px;
     font-family: sans-serif;
     font-weight: bolder;
@@ -379,9 +392,130 @@
     padding-bottom: 20px;
 }
 
-.white-space-conhair p{
+.white-space-conhair p {
     color: rgba(2, 2, 102, 0.568);
     font-size: 17px;
     padding-bottom: 18px;
     line-height: 1.9rem;
 }
+
+@media (max-width: 450px) {
+
+    .top-img {
+        max-width: 100%;
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* css hair mobile design start ---------------------------------------*/
+
+@media (max-width: 991px) {
+
+    .hair-header {
+        width: auto;
+    }
+
+    .top-img {
+        max-width: 100%;
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .content-text {
+        background-color: rgb(243, 242, 242);
+        color: rgba(3, 3, 88, 0.959);
+        height: auto;
+        width: auto;
+        padding: 20px;
+    }
+
+    .content-text h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+
+    .content-text p {
+        color: rgba(15, 15, 124, 0.753);
+        line-height: 1.8rem;
+    }
+
+    .Main-filter {
+        display: none;
+    }
+
+    .cards-rows {
+        padding: 10px;
+    }
+
+    #secondcard-row {
+        padding: 0px 0px 40px 0px;
+    }
+
+    #cards1 {
+        height: 480px;
+        width: auto;
+        margin: 0 0 20px 0;
+        padding: 15px;
+    }
+
+    #cards1 button {
+        height: 50px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #list-content-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column !important;
+        padding: 0px 0px 40px 0px;
+    }
+
+    #gift-img,
+    #conhair-img {
+        order: 1;
+        width: 100%;
+        height: 320px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .white-space-gift {
+        order: 2;
+        width: auto;
+        height: auto;
+        border-radius: 0px 0px 20px 20px;
+        padding: 20px;
+    }
+
+    .white-space-conhair {
+        order: 2;
+        width: auto;
+        height: auto;
+        border-radius: 0px 0px 20px 20px;
+        padding: 20px;
+    }
+
+    .white-space-gift h1,
+    .white-space-conhair h1 {
+        width: auto;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .white-space-gift p,
+    .white-space-conhair p {
+        width: auto;
+        padding: 0px 0px 5px 4px;
+    }
+
+}
+
+/* css hair mobile design start ---------------------------------------*/
+
+/* css hair desktop design end -----------------------------------------------*/

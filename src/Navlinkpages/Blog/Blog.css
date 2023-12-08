@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@
 }
 
 #sdcard-image1 {
-    padding: 20px 0px 30px 0px; 
+    padding: 20px 0px 30px 0px;
 }
 
 #sdcard-image2 {
@@ -29,7 +29,8 @@
     padding-bottom: 70px;
 }
 
-#blog-card , #hairla-card {
+#blog-card,
+#hairla-card {
     background-color: rgb(243, 242, 242);
     height: 560px;
     width: 569px;
@@ -41,7 +42,8 @@
     cursor: pointer;
 }
 
-#blog-card img , #hairla-card img{
+#blog-card img,
+#hairla-card img {
     width: 535px;
     height: 295px;
     object-fit: cover;
@@ -55,12 +57,14 @@
     margin-right: 17px;
 }
 
-#blog-card img::before , #hairla-card img::before {
+#blog-card img::before,
+#hairla-card img::before {
     content: "";
     display: block;
 }
 
-#blog-card:hover img, #hairla-card:hover img {
+#blog-card:hover img,
+#hairla-card:hover img {
     transform: scale(1.04);
 }
 
@@ -78,7 +82,8 @@
     text-decoration-line: underline;
 }
 
-#blog-card p , #hairla-card p {
+#blog-card p,
+#hairla-card p {
     font-size: 12px;
     font-family: sans-serif;
     color: rgba(2, 6, 68, 0.938);
@@ -114,4 +119,84 @@
     padding-left: 10px;
     font-weight: lighter;
     line-height: 1.8rem;
+}
+
+@media (max-width: 991px) {
+
+    #sdcard-image1 {
+        padding: 20px 0px 0px 0px;
+    }
+
+    #sdcard-image2 {
+        padding-bottom: 0px;
+    }
+
+    #sdcard-image3 {
+        padding-bottom: 10px;
+    }
+
+    .blog-rows {
+        padding: 30px 10px;
+    }
+
+    .blog-rows h3 {
+        font-size: 34px;
+    }
+
+    #blog-card,
+    #hairla-card {
+        height: 560px;
+        width: auto;
+        margin: 0 0 20px 0;
+        padding: 15px;
+    }
+
+    #blog-card img,
+    #hairla-card img {
+        width: auto;
+        min-width: 100%;
+        height: 295px;
+    }
+
+    .hover-img {
+        width: auto;
+        min-width: 100%;
+        position: relative;
+    }
+
+    #blog-card a {
+        width: auto;
+        letter-spacing: 0.02rem;
+        padding: 20px 0px 5px 5px;
+    }
+
+    #blog-card p,
+    #hairla-card p {
+        padding-left: 8px;
+    }
+
+    #blog-card h6 {
+        width: auto;
+        padding-left: 8px;
+    }
+
+    #hairla-card h2 {
+        width: auto;
+        padding: 20px 0px 5px 5px;
+    }
+
+    #hairla-card h6 {
+        width: auto;
+        padding-left: 8px;
+    }
+
+}
+
+@media (min-width: 574px) {
+
+    #blog-card,
+    #hairla-card {
+        margin-right: 25px;
+    }
+
 }

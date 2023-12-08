@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo&family=Foldit:wght@100;200&family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;1,700&family=Open+Sans:wght@300;400&display=swap");
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -113,27 +113,91 @@
     padding: 10px;
 }
 
-.slide-img {
+.carousel-img {
     height: 590px;
     object-fit: cover;
-    object-position: center center;
 }
 
-/* Css carousel end ##################################################################*/
 
+/* Css carousel mobile start  -------------------------------------------------------- */
+
+
+@media (max-width: 991px) {
+
+    .slide-content-1,
+    .slide-content-2,
+    .slide-content-3 {
+        color: rgba(3, 3, 88, 0.959);
+        background-color: rgb(243, 242, 242);
+        height: 250px;
+        width: auto;
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    .slide-content-1 h1,
+    .slide-content-2 h1 {
+        font-size: 33px;
+        padding-left: 25px !important;
+    }
+
+    .slide-content-3 h1 {
+        font-size: 33px;
+        text-align: start;
+        padding-left: 25px !important;
+    }
+
+    .slide-content-1 P,
+    .slide-content-2 P {
+        padding-left: 28px !important;
+    }
+
+    .slide-content-3 P {
+        font-family: "Mulish", sans-serif;
+        font-size: 18px;
+        padding-left: 28px;
+        text-align: start;
+    }
+
+    .slide-content-1 button,
+    .slide-content-2 button {
+        margin-left: 25px;
+    }
+
+    .slide-content-3 button {
+        margin-left: 25px;
+    }
+
+    .carousel-caption {
+        text-align: start;
+        position: static;
+    }
+
+    .carousel-img {
+        max-width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .carousel-caption {
+        padding: 0px 0px 40px 0px;
+    }
+
+}
+
+/* Css carousel mobile end */
+
+/* Css carousel end ----------------------------------*/
+
+/* Css container desktop design start -----------------------------------------*/
 
 .cards-rows {
     background-color: rgb(243, 242, 242);
     width: 100%;
     padding: 50px 70px 0px 95px;
-}
-
-.cards-rows h3 {
-    color: rgba(2, 6, 68, 0.938);
-    font-size: 28px;
-    font-weight: bold;
-    font-family: sans-serif;
-    padding-top: 55px;
 }
 
 #Meet-para {
@@ -148,11 +212,18 @@
     background-color: rgb(243, 242, 242);
     border: 1px solid black;
     height: 480px;
-    width: 300px;
-    margin-right: 30px;
+    width: auto;
     padding: 15px 0px 0px 17px;
     border-radius: 15px;
     cursor: pointer;
+}
+
+@media (min-width: 992px) {
+
+    #cards {
+        margin-right: 30px !important;
+    }
+
 }
 
 .hover-img {
@@ -205,7 +276,7 @@
     padding-top: 20px;
 }
 
-#cards p {
+.cart-para-text {
     font-family: sans-serif;
     font-size: 16px;
     color: rgb(63, 63, 141);
@@ -219,7 +290,7 @@
     text-decoration: line-through;
 }
 
-#cards button {
+.offcanva-btn {
     height: 50px;
     width: 230px;
     border-radius: 25px;
@@ -227,8 +298,12 @@
     border: 1px solid rgb(1, 1, 66);
 }
 
-#cards button:hover {
+.offcanva-btn:hover {
     border: 2px solid rgb(1, 1, 66);
+}
+
+.add-cart-btn {
+    cursor: auto;
 }
 
 #sale {
@@ -242,6 +317,63 @@
     position: absolute;
     margin: 10px 0px 0px 10px;
 }
+
+/* Css card mobile start  -------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    .cards-rows {
+        padding: 50px 0px 0px 25px;
+    }
+
+    #Meet-para {
+        font-size: 24px;
+        padding: 35px 10px 20px 10px;
+    }
+
+    #cards {
+        height: 480px;
+        width: auto;
+        margin: 0 0 20px 0;
+        padding: 15px;
+    }
+
+    .hover-img {
+        width: auto;
+        min-width: 100%;
+        position: relative;
+    }
+
+    #img1 {
+        position: absolute;
+        width: auto;
+        min-width: 100%;
+        height: 230px;
+    }
+
+    #img2 {
+        width: auto;
+        min-width: 100%;
+        height: 230px;
+    }
+
+    .offcanva-btn {
+        height: 50px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 574px) {
+
+    #cards {
+        margin-right: 15px;
+    }
+
+}
+
+/* Css card mobile end ----------------------------------*/
 
 .content-rows {
     width: 100%;
@@ -278,6 +410,23 @@
     letter-spacing: 0.01cm;
 }
 
+/* Css skincare mobile start  -------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    .content-rows {
+        width: 100%;
+        padding: 50px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content-image p {
+        padding-bottom: 20px;
+    }
+}
+
+/* Css skincare mobile end ----------------------------------*/
 
 #list-content-img {
     width: 100%;
@@ -383,12 +532,62 @@
     width: 140px;
 }
 
+/* Css skinpath mobile start  -------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    #list-content-img {
+        width: auto;
+        display: flex;
+        flex-direction: column !important;
+        padding: 0px 20px 20px 0px;
+    }
+
+    #hair-img,
+    #body-img,
+    #kits-img {
+        order: 1;
+        width: auto;
+        height: 320px;
+        border-radius: 20px 20px 0px 0px;
+
+    }
+
+    .white-space-hair,
+    .white-space-face,
+    .white-space-body,
+    .white-space-kits {
+        order: 2;
+        width: auto;
+        height: auto;
+        border-radius: 0px 0px 20px 20px;
+        padding: 20px;
+    }
+
+    .white-space-hair h1,
+    .white-space-body h1,
+    .white-space-face h1,
+    .white-space-kits h1 {
+        padding: 0;
+    }
+
+    .white-space-hair p,
+    .white-space-body p,
+    .white-space-face p,
+    .white-space-kits p {
+        width: auto;
+        padding: 0px 0px 5px 4px;
+    }
+}
+
+/* Css skinpath mobile end ----------------------------------*/
+
 #sdcard-image {
     padding: 20px 0px 60px 0px;
 }
 
 .refresh-content {
-    background-color: rgba(2, 6, 68, 0.938);
+    background-color: rgb(4, 7, 73);
     width: 100%;
     height: 370px;
 }
@@ -410,7 +609,7 @@
 }
 
 .product-rows {
-    background-color: rgba(2, 6, 68, 0.938);
+    background-color: rgb(4, 7, 73);
     width: 100%;
     height: 360px;
     display: flex;
@@ -448,6 +647,68 @@
     font-size: 16px;
 }
 
+/* Css choose-option mobile start  -------------------------------------------------------- */
+
+@media (max-width: 991px) {
+
+    #sdcard-image {
+        padding: 20px 0px 30px 0px;
+    }
+
+    .refresh-content {
+        height: auto;
+        padding-bottom: 1px;
+    }
+
+    .refresh-content p {
+        padding-top: 30px;
+    }
+
+    .refresh-content h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .product-rows {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 60px;
+    }
+
+    .product-rows div {
+        width: auto;
+    }
+
+    .product-rows img {
+        margin-left: 60px;
+    }
+
+    .product-rows h5 {
+        font-size: 19px;
+        padding: 20px 0px 5px 0px;
+    }
+
+    .product-rows p {
+        font-size: 14px;
+    }
+
+}
+
+/* Css choose-option mobile end ----------------------------------*/
+
+.cards-rows h3 {
+    font-family: sans-serif;
+    color: rgba(3, 3, 88, 0.959);
+    font-size: 28px;
+    font-weight: bolder;
+    padding-top: 55px;
+}
+
+#sdcard-image1 {
+    padding: 20px 0px 60px 0px;
+}
 
 #solution-card {
     background-color: rgb(243, 242, 242);
@@ -522,22 +783,61 @@
     transform: scale(1.02);
 }
 
+/* Css bathroom mobile start ----------------------------------*/
 
+@media (max-width: 991px) {
 
+    .cards-rows h3 {
+        font-size: 21px;
+        padding: 15px 10px 0px 10px;
+    }
 
+    #sdcard-image1 {
+        padding: 20px 10px 0px 10px;
+    }
 
-.item-sale {
-    width: 58px;
-    height: 29px;
-    z-index: 99;
-    top: -327px;
-    position: absolute;
-    left: 29px;
-    padding-left: 14px;
-    font-family: "Mulish", sans-serif;
+    #solution-card {
+        height: 480px;
+        width: auto;
+        margin: 0 0 20px 0;
+        padding: 15px;
+    }
+
+    #solution-card img {
+        width: auto;
+        min-width: 100%;
+        height: 185px;
+    }
+
+    .hover-img {
+        width: auto;
+        min-width: 100%;
+        position: relative;
+    }
+
+    #solution-card a {
+        width: auto;
+        font-size: 22px;
+        letter-spacing: 0.02rem;
+        padding: 20px 0px 5px 5px;
+    }
+
+    #solution-card p {
+        font-size: 12px;
+        padding-left: 8px;
+    }
+
+    #solution-card h6 {
+        width: auto;
+        padding-left: 8px;
+    }
+
+    #viewall-btn {
+        margin: 0px 0px 30px 100px;
+    }
 
 }
 
-.item-sale-div {
-    position: relative;
-}
+/* Css bathroom mobile end ----------------------------------*/
+
+/* Css container desktop design end -----------------------------------------*/

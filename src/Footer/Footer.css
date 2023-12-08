@@ -1,143 +1,221 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.footer-page{
-    height: 730px;
-    background-color: rgba(2, 6, 68, 0.938);
+
+/* css footer desktop design start -------------------------------------------*/ 
+
+.footer-page {
+    background-color: rgb(4, 7, 73);
     color: white;
     padding-top: 60px;
 }
-.footer-page h1{
+
+.footer-page h1 {
     font-size: 45px;
     font-weight: 600;
     text-align: center;
     font-family: sans-serif;
 }
-.footer-page p{
+
+.footer-page-p {
     color: rgba(211, 206, 206, 0.801);
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.01rem;
     padding: 10px 0px 10px 0px;
 }
-.content-links{
+
+.content-links {
     display: flex;
     padding: 50px 0px 40px 100px;
 }
-.content-links h5{
+
+.content-links h5 {
     font-family: sans-serif;
     color: white;
     font-weight: 600;
 }
-.shop-links{
+
+.shop-links {
     display: flex;
     flex-direction: column;
 }
-.shop-links a, .about-links a{
+
+.shop-links a,
+.about-links a {
     font-size: 15px;
     padding: 8px 0px;
     color: rgb(165, 162, 162) !important;
 }
-.shop-links a:hover , .content-links a:hover{
+
+.shop-links a:hover,
+.content-links a:hover {
     color: white !important;
     text-decoration: underline;
 }
-.list-link{
+
+.list-link {
     text-decoration: none;
 }
-.about-links{
+
+.about-links {
     display: flex;
     flex-direction: column;
     padding-left: 250px;
 }
-.our-text{
+
+.our-text {
     padding-left: 170px;
 }
-.our-text p{
+
+.our-text p {
     width: 280px;
     font-size: 17px;
     text-align: left;
     color: rgb(165, 162, 162);
 }
-#logoref{
+
+#logoref {
     height: 35px;
-    padding-left: 100px;
+    margin-left: 100px;
 }
-.input{
-    background-color: transparent;
+
+/* css footer mobile design start -------------------------------------------*/ 
+
+@media (max-width: 991px) {
+
+    .footer-page {
+        padding-top: 40px;
+    }
+    
+    .footer-page h1 {
+        font-size: 34px;
+        padding: 0px 10px;
+    }
+    
+    .footer-page-p {
+        padding: 10px 20px;
+    }
+    
+    .content-links {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0px 40px 50px;
+    }
+    
+    .about-links {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .our-text {
+        padding: 40px 0px 0px 0px;
+    }
+    
+    .our-text p {
+        width: auto;
+        padding: 20px 10px 0px 0px;
+    }
+    
+    #logoref {
+        height: 35px;
+        margin: 40px 0px 20px 10px;
+    }
+    
+}
+
+/* css footer mobile design end -------------------------------------------*/ 
+
+.footer-email{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-input {
+    background-color: rgb(4, 7, 73);
     color: white;
     height: 48px;
     width: 300px;
     font-size: 16px;
     letter-spacing: 0.01rem;
     padding: 10px 0px 0px 22px;
-    border: none;
-    outline: none;
-}
-.input-wrap{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 48px;
-    width: 380px;
-    margin-left: 490px;
-    border: 2px solid gray;
-    border-radius: 50px;
-    position: relative;
-}
-.input-wrap:hover{
-    border: 2px solid rgb(199, 197, 197);
+    border-radius: 25px;
+    border: 1px solid rgb(253, 253, 253, 0.7);
 }
 
-.input-wrap label{
-    font-size: 15px;
-    color: rgba(255, 253, 253, 0.801);
-    padding-left: 20px;
+.footer-input[type="email"] {
+    caret-color: white;
+    color: white;
+}
+
+.footer-input:focus {
+    outline: none;
+    border: 2px solid rgb(253, 253, 253);
+}
+
+.input-wrap label {
+    font-size: 18px;
     position: absolute;
-    top: 9px;
-    left: 0;
+    top: 10px;
+    left: 25px;
     pointer-events: none;
     transition: 0.3s ease all;
+    color: rgb(253, 253, 253, 0.7);
 }
 
-.input:focus+label ,
-.input:valid+label {
-    background-color: transparent;
-    color: rgba(255, 253, 253, 0.801);
-    font-size: 12px;
-    top: 2px;
+.input-wrap {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.footer-input:focus+label {
+    font-size: 11px;
+    color: rgb(253, 253, 253, 0.7);
+    top: 5px;
     left: 17px;
-    padding: 0px 5px;
+    padding: 0 7px;
 }
 
-.social-links{
+.footer-email-btn {
+    position: absolute;
+    color: rgb(253, 253, 253, 0.7);
+    right: 20px;
+    top: 17px;
+}
+
+.social-links {
     height: 75px;
     text-align: center;
 }
-#links-logo{
+
+#links-logo {
     margin-right: 25px;
 }
 
-#links-logo:hover{
+#links-logo:hover {
     transform: scale(1.07);
     cursor: pointer;
 }
 
-#copyrgt{
+.copy-rgt {
     color: rgba(211, 206, 206, 0.801);
-    padding-top: 30px;
+    padding: 30px 0px;
     font-size: 11px;
     text-align: center;
 }
-.fot-link{
+
+.fot-link {
     color: rgba(211, 206, 206, 0.801);
     text-decoration: none;
     cursor: pointer;
     padding-right: 4px;
 }
-.fot-link:hover{
+
+.fot-link:hover {
     color: white;
     text-decoration: underline;
 }
+
+/* css footer desktop design end -------------------------------------------*/ 

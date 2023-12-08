@@ -23,11 +23,11 @@ function Contact() {
             <input className='input2' type='email' required />
             <label for=''>Email *</label>
           </div>
-        </div><br/>
+        </div>
           <div className="input-path">
           <input className='input3' type='text' required />
           <label for=''>Phone number</label>
-          </div><br/>
+          </div>
           <div className="input-path">
           <textarea typeof='text' required ></textarea>
           <label for=''>Comment</label>

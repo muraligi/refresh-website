@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.face-card{
+.face-card {
     padding-bottom: 60px !important;
 }
 
@@ -16,15 +16,15 @@
     padding: 60px 0px 0px 70px;
 }
 
-#face-img{
+#face-img {
     width: 31%;
     height: 410px;
     object-fit: cover;
     object-position: center;
-    border-radius: 20px 0px 0px 20px;   
+    border-radius: 20px 0px 0px 20px;
 }
 
-.white-space-facebot h1{
+.white-space-facebot h1 {
     font-family: sans-serif;
     font-weight: bolder;
     font-size: 46px;
@@ -32,13 +32,14 @@
     padding-bottom: 20px;
 }
 
-.white-space-facebot p{
+.white-space-facebot p {
     width: 700px;
     color: rgba(2, 2, 102, 0.568);
     font-size: 17px;
     padding-bottom: 18px;
     line-height: 1.9rem;
 }
+
 .white-space-facebot button {
     width: 140px;
     height: 50px;
@@ -47,4 +48,34 @@
     color: white;
     border-radius: 25px;
     border: none;
+}
+
+@media (max-width: 991px) {
+
+    #face-img {
+        order: 1;
+        width: 100%;
+        height: 320px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .white-space-facebot {
+        order: 2;
+        width: auto;
+        height: auto;
+        border-radius: 0px 0px 20px 20px;
+        padding: 20px;
+    }
+
+    .white-space-facebot h1 {
+        width: auto;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .white-space-facebot p {
+        width: auto;
+        padding: 0px 0px 5px 4px;
+    }
+
 }

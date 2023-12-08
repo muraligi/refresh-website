@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "../Blog/Blog.css";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
@@ -14,7 +14,7 @@ function Blog() {
         <CardGroup id="sdcard-image1">
           <Card id="blog-card">
             <div className="hover-img">
-            <img src={require("../../images/BlogImages/card1.png")} />
+              <img src={require("../../images/BlogImages/card1.png")} />
             </div>
             <a>Certified cruelty-free: we've joined Leaping Bunny</a>
             <p>APRIL 21, 2022</p>
@@ -25,7 +25,7 @@ function Blog() {
           </Card>
           <Card id="blog-card">
             <div className="hover-img">
-            <img src={require("../../images/BlogImages/card2.png")} />
+              <img src={require("../../images/BlogImages/card2.png")} />
             </div>
             <a>Everything you need to know about Eye Stick 2.0</a>
             <p>APRIL 21, 2022</p>
@@ -39,42 +39,44 @@ function Blog() {
         <CardGroup id="sdcard-image2">
           <Card id="blog-card">
             <div className="hover-img">
-            <img src={require("../../images//BlogImages/card3.png")} />
+              <img src={require("../../images//BlogImages/card3.png")} />
             </div>
             <a>5 new year’s resolutions for 2022</a>
             <p>APRIL 21, 2022</p>
             <h6>
-              We got specific, so you don’t have to. Consider these resolutions to 
-              off 2022!
+              We got specific, so you don’t have to. Consider these resolutions
+              to off 2022!
             </h6>
           </Card>
           <Card id="blog-card">
             <div className="hover-img">
-            <img src={require("../../images/BlogImages/card4.png")} />
+              <img src={require("../../images/BlogImages/card4.png")} />
             </div>
             <a>Taking care of man’s best friend</a>
             <p>APRIL 21, 2022</p>
-            <h6>August 26 is National Dog Day, and we’re celebrating our furry friends.</h6>
+            <h6>
+              August 26 is National Dog Day, and we’re celebrating our furry
+              friends.
+            </h6>
           </Card>
         </CardGroup>
 
         <CardGroup id="sdcard-image3">
           <div id="hairla-card">
             <div className="hover-img">
-            <img src={require("../../images//BlogImages/card5.png")} />
+              <img src={require("../../images//BlogImages/card5.png")} />
             </div>
             <h2>5 reasons our shampoo was named best of 2021</h2>
             <p>APRIL 21, 2022</p>
             <h6>
-              Learn what separates this Shampoo from the pack and why it was named best in
-              class.
+              Learn what separates this Shampoo from the pack and why it was
+              named best in class.
             </h6>
           </div>
         </CardGroup>
-
       </div>
     </div>
-  )
+  );
 }
 
 export default Blog;

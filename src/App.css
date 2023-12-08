@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lexend&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Didact Gothic', sans-serif;
   font-family: 'Lexend', sans-serif;
 }
-body {
-  background-color: rgba(2, 6, 68, 0.938);
-  padding-top: 155px;
-}
-nav{
+
+@media (min-width: 992px) {
+
+  body {
+    padding-top: 155px;
+  }
+
+  nav {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+  }
+
 }
-
-

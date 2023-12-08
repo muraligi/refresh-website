@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import "../Container/Container.css";
@@ -9,16 +9,19 @@ import image1 from "../images/slide img1.png";
 import image2 from "../images/silde img2.png";
 import image3 from "../images/slide img3.png";
 import { Link } from "react-router-dom";
-import ProductDisplay from "../ProductDisplaypage/ProductDisplay";
+import { ShopContext } from "../Context/ShopContext";
+import Cartbutton from "../Cartbuttonpage/Cartbutton";
 
-const Container = (props) => {
+const Container = () => {
+  const { addToCart } = useContext(ShopContext);
+
   const items = [
     {
       src: image1,
       id: 1,
       alt: "Image 1",
       heading: "Your hair, but better.",
-      
+
       listcontent:
         "Lather up with our newest shampoo for clean, strong, and healthy hair.",
       btn: "Shop shampoo",
@@ -57,7 +60,7 @@ const Container = (props) => {
             {items.map((item) => (
               <Carousel.Item key={item.id}>
                 <img
-                  className="d-block w-100 slide-img"
+                  className="d-block w-100 carousel-img"
                   src={item.src}
                   alt={item.alt}
                 />
@@ -96,42 +99,106 @@ const Container = (props) => {
         <CardGroup>
           <Card id="cards">
             <div className="hover-img">
-              <Link to='/ProductDisplay'><img id="img1" src={require("../images/card1.png")} />
-              <img id="img2" src={require("../images/card1zoom.png")} /></Link>
+              <Link to={`/Product/${1}`}>
+                <img id="img1" src={require("../images/card1.png")} />
+                <img id="img2" src={require("../images/card1zoom.png")} />
+              </Link>
             </div>
             <a>Face Moisturizer</a>
-            <p>$16.00</p>
-            <button>Add to cart</button>
+            <p className="cart-para-text">$16.00</p>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(1);
+                }}
+              >
+                Add to cart
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
           <Card id="cards">
             <div className="hover-img">
-              <img id="img1" src={require("../images/card2.png")} />
-              <img id="img2" src={require("../images/card2zoom.png")} />
+              <Link to={`/Product/${2}`}>
+                <img id="img1" src={require("../images/card2.png")} />
+                <img id="img2" src={require("../images/card2zoom.png")} />
+              </Link>
             </div>
             <a>Eye Stick 2.0</a>
-            <p>$18.00</p>
-            <button>Add to cart</button>
+            <p className="cart-para-text">$18.00</p>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(2);
+                }}
+              >
+                Add to cart
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
           <Card id="cards">
             <div className="hover-img">
-              <img id="img1" src={require("../images/card3.png")} />
-              <img id="img2" src={require("../images/card3zoom.png")} />
+              <Link to={`/Product/${3}`}>
+                <img id="img1" src={require("../images/card3.png")} />
+                <img id="img2" src={require("../images/card3zoom.png")} />
+              </Link>
             </div>
             <h6 id="sale">Sale</h6>
             <a>Face Wash - Travel Size</a>
-            <p>
+            <p className="cart-para-text">
               <span>$10.00</span> $5.00
             </p>
-            <button>Add to cart</button>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(3);
+                }}
+              >
+                Add to cart
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
           <Card id="cards">
             <div className="hover-img">
-              <img id="img1" src={require("../images/card4.png")} />
-              <img id="img2" src={require("../images/card4zoom.png")} />
+              <Link to={`/Product/${4}`}>
+                <img id="img1" src={require("../images/card4.png")} />
+                <img id="img2" src={require("../images/card4zoom.png")} />
+              </Link>
             </div>
             <a>Face Wash</a>
-            <p>$14.00</p>
-            <button>Add to cart</button>
+            <p className="cart-para-text">$14.00</p>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(4);
+                }}
+              >
+                Add to cart
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
         </CardGroup>
         <div className="content-rows">
@@ -215,42 +282,106 @@ const Container = (props) => {
         <CardGroup id="sdcard-image">
           <Card id="cards">
             <div className="hover-img">
-              <img id="img1" src={require("../images/sdcard1.png")} />
-              <img id="img2" src={require("../images/sdcard1zoom.png")} />
+              <Link to={`/Product/${5}`}>
+                <img id="img1" src={require("../images/sdcard1.png")} />
+                <img id="img2" src={require("../images/sdcard1zoom.png")} />
+              </Link>
             </div>
             <h6 id="sale">Sale</h6>
             <a>Body Duo</a>
-            <p>
+            <p className="cart-para-text">
               <span>$28.00</span> $26.00
             </p>
-            <button>Choose options</button>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(5);
+                }}
+              >
+                Choose options
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
           <Card id="cards">
             <div className="hover-img">
-              <img id="img1" src={require("../images/sdcard2.png")} />
-              <img id="img2" src={require("../images/sdcard2zoom.png")} />
+              <Link to={`/Product/${6}`}>
+                <img id="img1" src={require("../images/sdcard2.png")} />
+                <img id="img2" src={require("../images/sdcard2zoom.png")} />
+              </Link>
             </div>
             <a>Face and Body Kit</a>
-            <p>$41.00</p>
-            <button>Choose options</button>
+            <p className="cart-para-text">$41.00</p>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(6);
+                }}
+              >
+                Choose options
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
           <Card id="cards">
             <div className="hover-img">
-              <img id="img1" src={require("../images/sdcard3.png")} />
-              <img id="img2" src={require("../images/sdcard3zoom.png")} />
+              <Link to={`/Product/${7}`}>
+                <img id="img1" src={require("../images/sdcard3.png")} />
+                <img id="img2" src={require("../images/sdcard3zoom.png")} />
+              </Link>
             </div>
             <a>Hair and Body Kit</a>
-            <p>$39.00</p>
-            <button>Choose options</button>
+            <p className="cart-para-text">$39.00</p>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(7);
+                }}
+              >
+                Choose options
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
           <Card id="cards">
             <div className="hover-img">
-              <img id="img1" src={require("../images/sdcard4.png")} />
-              <img id="img2" src={require("../images/sdcard4zoom.png")} />
+              <Link to={`/Product/${8}`}>
+                <img id="img1" src={require("../images/sdcard4.png")} />
+                <img id="img2" src={require("../images/sdcard4zoom.png")} />
+              </Link>
             </div>
             <a>Face Kit</a>
-            <p>$45.00</p>
-            <button>Add to cart</button>
+            <p className="cart-para-text">$45.00</p>
+            <div className="add-cart-btn">
+              <button
+                className="offcanva-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions"
+                onClick={() => {
+                  addToCart(8);
+                }}
+              >
+                Add to cart
+              </button>
+              <Cartbutton />
+            </div>
           </Card>
         </CardGroup>
       </div>
@@ -285,10 +416,10 @@ const Container = (props) => {
       </div>
       <div className="cards-rows">
         <h3>Indulge in some light bathroom reading.</h3>
-        <CardGroup id="sdcard-image">
+        <CardGroup id="sdcard-image1">
           <Card id="solution-card">
             <div className="hover-img">
-            <img src={require("../images/solution1.png")} />
+              <img src={require("../images/solution1.png")} />
             </div>
             <a>Certified cruelty-free: we've joined Leaping Bunny</a>
             <p>APRIL 21, 2022</p>
@@ -299,7 +430,7 @@ const Container = (props) => {
           </Card>
           <Card id="solution-card">
             <div className="hover-img">
-            <img src={require("../images/solution2.png")} />
+              <img src={require("../images/solution2.png")} />
             </div>
             <a>Everything you need to know about Eye Stick 2.0</a>
             <p>APRIL 21, 2022</p>
@@ -308,9 +439,9 @@ const Container = (props) => {
               feeling your best for years to come.
             </h6>
           </Card>
-          <Card id="solution-card">            
+          <Card id="solution-card">
             <div className="hover-img">
-            <img src={require("../images/solution3.png")} />
+              <img src={require("../images/solution3.png")} />
             </div>
             <a>5 new year’s resolutions for 2022</a>
             <p>APRIL 21, 2022</p>
@@ -320,7 +451,9 @@ const Container = (props) => {
             </h6>
           </Card>
         </CardGroup>
-       <Link to='/Blog'><button id="viewall-btn">View all</button></Link>
+        <Link to="/Blog">
+          <button id="viewall-btn">View all</button>
+        </Link>
       </div>
     </div>
   );
